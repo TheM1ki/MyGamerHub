@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyGamerHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MyGamerHub</h1>
+    </header>
+    <main>
+        <section id="posts">
+            <h2 data-i18n="posts_title">Latest Posts</h2>
+            <!-- Posts will be dynamically added here -->
+        </section>
+        <section id="add-post">
+            <h2 data-i18n="add_post_title">Add New Post</h2>
+            <form id="post-form">
+                <label for="post-content" data-i18n="post_content_label">Content:</label>
+                <textarea id="post-content" name="post-content" required></textarea>
+                <button type="submit" data-i18n="submit_button">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.3/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.1.2/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
