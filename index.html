@@ -9,21 +9,61 @@
 <body>
     <header>
         <h1>MyGamerHub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                <li><a href="#posts" data-i18n="nav_posts">Posts</a></li>
+                <li><a href="#add-post" data-i18n="nav_add_post">Add Post</a></li>
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <section id="home">
+            <h2 data-i18n="home_title">Welcome to MyGamerHub</h2>
+            <p data-i18n="home_description">Your ultimate hub for gaming news and updates. Connect with gamers from around the world and share your insights on the latest games and trends.</p>
+            <img src="gaming.jpg" alt="Gaming" class="responsive">
+        </section>
         <section id="posts">
             <h2 data-i18n="posts_title">Latest Posts</h2>
             <!-- Posts will be dynamically added here -->
+            <article>
+                <h3>Example Post Title</h3>
+                <p>Example post content goes here. This is just a placeholder to demonstrate how posts will look on the page.</p>
+                <p class="meta"><span data-i18n="posted_by">Posted by:</span> User123 <span data-i18n="on_date">on</span> 2025-03-15</p>
+            </article>
         </section>
         <section id="add-post">
             <h2 data-i18n="add_post_title">Add New Post</h2>
             <form id="post-form">
+                <label for="post-title" data-i18n="post_title_label">Title:</label>
+                <input type="text" id="post-title" name="post-title" required>
                 <label for="post-content" data-i18n="post_content_label">Content:</label>
                 <textarea id="post-content" name="post-content" required></textarea>
                 <button type="submit" data-i18n="submit_button">Submit</button>
             </form>
         </section>
+        <section id="about">
+            <h2 data-i18n="about_title">About MyGamerHub</h2>
+            <p data-i18n="about_description">MyGamerHub is a platform created for gamers by gamers. Our mission is to provide a space where gaming enthusiasts can share their thoughts, reviews, and news about the latest games and consoles. Whether you are a PC gamer, a console gamer, or both, you will find a community here that shares your passion.</p>
+        </section>
+        <section id="contact">
+            <h2 data-i18n="contact_title">Contact Us</h2>
+            <form id="contact-form">
+                <label for="contact-name" data-i18n="contact_name_label">Name:</label>
+                <input type="text" id="contact-name" name="contact-name" required>
+                <label for="contact-email" data-i18n="contact_email_label">Email:</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+                <label for="contact-message" data-i18n="contact_message_label">Message:</label>
+                <textarea id="contact-message" name="contact-message" required></textarea>
+                <button type="submit" data-i18n="contact_submit_button">Send</button>
+            </form>
+        </section>
     </main>
+    <footer class="footer">
+        <p>&copy; 2025 MyGamerHub. <span data-i18n="all_rights_reserved">All rights reserved.</span></p>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.3/i18next.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.1.2/i18nextBrowserLanguageDetector.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
